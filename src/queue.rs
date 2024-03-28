@@ -13,6 +13,7 @@ use tracing::instrument;
 
 use crate::{job_handle::MemoryJobHandle, types::JobRow};
 
+#[derive(Clone)]
 pub struct MemoryQueue {
     jobs: Arc<RwLock<HashMap<Xid, JobRow>>>,
     dead_jobs: Arc<RwLock<Vec<JobRow>>>,
