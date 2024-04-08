@@ -4,7 +4,7 @@
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A Memory backed implementation of the job Queue for [aide-de-camp](https://github.com/ZeroAssumptions/aide-de-camp) using a HashMap.
+A In-Memory backed implementation of the job Queue for [aide-de-camp](https://github.com/ZeroAssumptions/aide-de-camp) using a HashMap.
 
 ## Example
 
@@ -71,4 +71,5 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 I decided to follow the same licensing model as aide-de-camp, so be welcome to choose either of the following based on your use case:
 
 Apache License, Version 2.0 (LICENSE-APACHE or http://www.apache.org/licenses/LICENSE-2.0)
+
 MIT license (LICENSE-MIT or http://opensource.org/licenses/MIT)

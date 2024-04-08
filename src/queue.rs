@@ -15,8 +15,8 @@ use crate::{job_handle::MemoryJobHandle, types::JobRow};
 
 #[derive(Clone)]
 pub struct MemoryQueue {
-    jobs: Arc<RwLock<HashMap<Xid, JobRow>>>,
-    dead_jobs: Arc<RwLock<Vec<JobRow>>>,
+    pub jobs: Arc<RwLock<HashMap<Xid, JobRow>>>,
+    pub dead_jobs: Arc<RwLock<Vec<JobRow>>>,
     bincode_config: bincode::config::Configuration,
 }
 

@@ -1,7 +1,7 @@
 use aide_de_camp::core::{Bytes, DateTime, Xid};
 
 #[derive(Debug, Clone)]
-pub(crate) struct JobRow {
+pub struct JobRow {
     pub jid: Xid,
     pub job_type: String,
     pub payload: Bytes,
